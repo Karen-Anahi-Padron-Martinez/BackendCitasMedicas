@@ -160,7 +160,7 @@ app.get('/perfil/:id', (req, res) => {
 
 // Ruta para obtener los registros de la tabla Psicopedagogia
 app.get('/psicopedagogias', (req, res) => {
-  const query = 'SELECT * FROM Psicopedagoga';
+  const query = 'SELECT * FROM Psicopedagogia';
   connection.query(query, (err, results) => {
     if (err) {
       console.error('Error retrieving estudiantes:', err);
